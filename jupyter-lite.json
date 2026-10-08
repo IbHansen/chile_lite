@@ -1,0 +1,11 @@
+{
+  "jupyter-lite-schema-version": 0,
+  "jupyter-config-data": {
+    "appName": "ModelFlow Chile",
+    "settingsOverrides": {
+      "@jupyterlab/notebook-extension:tracker": {
+        "autoStartDefaultKernel": true
+      }
+    }
+  }
+}

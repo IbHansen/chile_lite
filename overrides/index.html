@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!--
+  Replaces dist/index.html after "jupyter lite build" (see build.cmd and deploy.yml).
+  The site's front page opens chile_scenarios.ipynb in the Jupyter Notebook interface
+  instead of JupyterLab. The jupyter-config-data block must stay: the app pages
+  read this file to find the root of the site.
+  Master: C:\mfmodeller_raw\chile\lite\overrides\index.html
+-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ModelFlow Chile</title>
+    <script id="jupyter-config-data" type="application/json" data-jupyter-lite-root=".">
+      {}
+    </script>
+    <script>
+      window.location.replace('./notebooks/index.html?path=chile_scenarios.ipynb');
+    </script>
+  </head>
+  <body>
+    <p><a href="./notebooks/index.html?path=chile_scenarios.ipynb">Open chile_scenarios.ipynb</a></p>
+  </body>
+</html>
